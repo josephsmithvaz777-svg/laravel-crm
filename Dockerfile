@@ -14,4 +14,4 @@ RUN composer install --no-dev --optimize-autoloader --ignore-platform-req=ext-ca
 RUN chown -R www-data:www-data storage bootstrap/cache && \
     chmod -R 775 storage bootstrap/cache
 
-CMD php-fpm
+CMD php -S 0.0.0.0:3000 -t public
