@@ -95,9 +95,8 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "scripts": {
-        "post-autoload-dump": [
-            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover --ansi"
-        ]
+      "post-autoload-dump": [
+        "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump"
+      ]
     }
 }
